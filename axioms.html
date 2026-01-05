@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Etherware Cloud – Axioms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Foundational axioms of Etherware Cloud"
+    />
+    <link rel="stylesheet" href="assets/base.css" />
+    <script defer src="assets/lang.js"></script>
+  </head>
+
+  <body>
+    <nav class="lang-switch" aria-label="Language selector">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </nav>
+
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="/index.html">Home</a>
+      <a href="/principles.html">Principles</a>
+      <a href="/manifesto.html">Manifesto</a>
+      <a href="/antimanifest.html">Anti-Manifesto</a>
+      <a href="/howevolves.html">How EC Evolves</a>
+      <a href="/axioms.html" class="active">Axioms</a>
+      <a href="/documents.html">Documents</a>
+      <a href="/experiments.html">Experiments</a>
+      <a href="/history.html">History</a>
+    </nav>
+
+    <main class="container">
+      <article>
+        <h1>Axioms of Etherware Cloud</h1>
+
+        <p>
+          Axioms define the minimal, non-negotiable constraints of Etherware
+          Cloud. They are not implementation details, recommendations, or best
+          practices.
+        </p>
+
+        <p>
+          Axioms do not describe how EC is implemented, but what must remain
+          true for something to be considered part of Etherware Cloud.
+        </p>
+
+        <section>
+          <h2>Axiom 1 — Everything is a Message</h2>
+
+          <p>
+            All interactions in Etherware Cloud are expressed as messages.
+          </p>
+
+          <p>
+            Code, configuration, failures, deployments, and results are all
+            represented as messages.
+          </p>
+
+          <!-- TODO: Discuss whether metadata and control signals are messages or message attributes -->
+        </section>
+
+        <section>
+          <h2>Axiom 2 — Messages Exist Independently of Executors</h2>
+
+          <p>
+            Messages are not owned by executors.
+          </p>
+
+          <p>
+            An executor may consume, transform, or emit messages, but the
+            message itself exists independently of its implementation.
+          </p>
+        </section>
+
+        <section>
+          <h2>Axiom 3 — Executors Are Replaceable</h2>
+
+          <p>
+            Any executor may be replaced without altering the system, as long
+            as it respects the message contract.
+          </p>
+
+          <p>
+            Executors may be written in any language or implemented as AI
+            systems, expert systems, or hybrid models.
+          </p>
+        </section>
+
+        <section>
+          <h2>Axiom 4 — Failure Is a Message</h2>
+
+          <p>
+            Failures are first-class messages.
+          </p>
+
+          <p>
+            Errors do not break the model and do not require exceptional
+            handling outside the message system.
+          </p>
+        </section>
+
+        <section>
+          <h2>Axiom 5 — Time Is Part of the Message</h2>
+
+          <p>
+            Messages exist in time.
+          </p>
+
+          <p>
+            Ordering, replay, delay, and historical inspection are intrinsic
+            properties of the system.
+          </p>
+
+          <!-- TODO: Define whether time must be explicit in every message or derivable from context -->
+        </section>
+
+        <section>
+          <h2>Axiom 6 — Transparency Is Selective</h2>
+
+          <p>
+            Etherware Cloud does not require full transparency.
+          </p>
+
+          <p>
+            Visibility of messages is selective, controlled, and contextual.
+          </p>
+
+          <p>
+            Lack of visibility does not negate the existence of a message.
+          </p>
+        </section>
+
+        <section>
+          <h2>Axiom 7 — Contracts Are Stronger Than Code</h2>
+
+          <p>
+            Message contracts define system behavior more strongly than code
+            implementations.
+          </p>
+
+          <p>
+            Breaking a contract is a semantic rupture, not an implementation
+            detail.
+          </p>
+
+          <!-- TODO: Discuss how strict contract validation should be at runtime -->
+        </section>
+
+        <section>
+          <h2>Axiom 8 — Evolution Includes Rupture</h2>
+
+          <p>
+            Etherware Cloud allows and expects breaking changes.
+          </p>
+
+          <p>
+            Compatibility is optional and contextual.
+          </p>
+        </section>
+
+        <section>
+          <h2>Axiom 9 — Divergence Is Valid</h2>
+
+          <p>
+            Multiple incompatible ideas, implementations, or networks may
+            coexist within the EC ecosystem.
+          </p>
+
+          <p>
+            Convergence is emergent, not enforced.
+          </p>
+        </section>
+
+        <section>
+          <h2>Axiom 10 — Use Implies Responsibility</h2>
+
+          <p>
+            Using an idea or implementation implies accepting its risks.
+          </p>
+
+          <p>
+            Etherware Cloud provides no implicit guarantees of safety,
+            correctness, or stability.
+          </p>
+        </section>
+
+        <section>
+          <h2>Axiom 11 — Creation Has Cost</h2>
+
+          <p>
+            Every transformation embodies human effort and cognitive cost.
+          </p>
+
+          <p>
+            Etherware Cloud acknowledges that creation is not free, even when
+            code is open.
+          </p>
+
+          <!-- TODO: Formalize how creation cost is represented or accounted for -->
+        </section>
+
+        <section>
+          <h2>Axiom 12 — Authorship Is Preserved</h2>
+
+          <p>
+            Authorship of ideas and transformations is preserved regardless of
+            reuse, obsolescence, or replacement.
+          </p>
+
+          <p>
+            Replacement does not erase origin.
+          </p>
+        </section>
+
+        <section>
+          <h2>Axiom 13 — Canon Emerges From Use</h2>
+
+          <p>
+            Nothing is canonical by declaration.
+          </p>
+
+          <p>
+            Canonical status emerges from effective use, not consensus or
+            authority.
+          </p>
+        </section>
+
+        <section>
+          <h2>Closing Note</h2>
+
+          <p>
+            Axioms may evolve, but only through explicit revision.
+          </p>
+
+          <p>
+            Until revised, they define the boundary of Etherware Cloud.
+          </p>
+
+          <!-- TODO: Define a formal process for revising axioms -->
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

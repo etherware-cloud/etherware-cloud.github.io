@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Etherware Cloud – Experiments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Active explorations and logs of Etherware Cloud."
+    />
+    <link rel="stylesheet" href="assets/base.css" />
+    <script defer src="assets/lang.js"></script>
+  </head>
+  <body>
+    <nav class="lang-switch" aria-label="Language selector">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </nav>
+
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="/index.html">Home</a>
+      <a href="/principles.html">Principles</a>
+      <a href="/manifesto.html">Manifesto</a>
+      <a href="/antimanifest.html">Anti-Manifesto</a>
+      <a href="/howevolves.html">How EC Evolves</a>
+      <a href="/axioms.html">Axioms</a>
+      <a href="/documents.html">Documents</a>
+      <a href="/experiments.html" class="active">Experiments</a>
+      <a href="/history.html">History</a>
+    </nav>
+
+    <main class="container">
+      <!-- English Section -->
+      <section lang="en">
+        <h1>Experiments</h1>
+        <p>
+          <strong>Experiments</strong> are protected spaces for exploration.
+          They represent ideas that are not yet "truth" but deserve to exist to
+          be tested, broken, and evolved.
+        </p>
+
+        <div class="workflow-box">
+          <h3>How to Participate</h3>
+          <p>Experiments follow a direct operational flow:</p>
+          <ul>
+            <li>
+              <strong>Submission:</strong> New experiments are uploaded directly
+              to this page via a <strong>Pull Request (PR)</strong> in the
+              repository.
+            </li>
+            <li>
+              <strong>The Log (Bitácora):</strong> Once published, the
+              experiment should be used as a <strong>progress log</strong>.
+              Updates should reflect findings, changes in direction, or
+              failures.
+            </li>
+            <li>
+              <strong>Respecting Origins:</strong> If an experiment stems from
+              an idea in <code>documents.html</code>, it is recommended
+              <strong>not to change the original text</strong>. This ensures
+              traceability and preserves the initial hypothesis.
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <div class="experiment-log">
+          <h2>Active Experiments</h2>
+          <article>
+            <h3>Log: Shared Call Stack Consumption</h3>
+            <p><em>Initial State: Derived from Documents (v0.1)</em></p>
+            <p>
+              <strong>Hypothesis:</strong> A model where parameters are stored
+              once and consumed by multiple concurrent executions.
+            </p>
+            <p>
+              <strong>Log Entry [Date]:</strong> Initial conceptual mapping for
+              the Python executor. Identifying divergence points where state
+              mutation is required.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sección en Español -->
+      <section lang="es">
+        <h1>Experimentos</h1>
+        <p>
+          Los <strong>Experimentos</strong> son espacios protegidos para la
+          exploración. Representan ideas que aún no son "verdad", pero que
+          merecen existir para ser probadas, rotas y evolucionadas.
+        </p>
+
+        <div class="workflow-box">
+          <h3>Cómo Participar</h3>
+          <p>Los experimentos siguen un flujo operativo directo:</p>
+          <ul>
+            <li>
+              <strong>Publicación:</strong> Los nuevos experimentos se suben
+              directamente a esta página mediante un
+              <strong>Pull Request (PR)</strong> en el repositorio.
+            </li>
+            <li>
+              <strong>La Bitácora:</strong> Una vez publicado, el experimento
+              debe usarse como una <strong>bitácora de avances</strong>. Las
+              actualizaciones deben reflejar hallazgos, cambios de rumbo o
+              fallos.
+            </li>
+            <li>
+              <strong>Respeto al Origen:</strong> Si un experimento nace de una
+              idea en <code>documents.html</code>, se recomienda
+              <strong>no cambiar el texto originalmente propuesto</strong>. Esto
+              garantiza la trazabilidad y preserva la hipótesis inicial.
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <div class="experiment-log">
+          <h2>Experimentos Activos</h2>
+          <article>
+            <h3>Bitácora: Consumo Compartido de Pila de Llamadas</h3>
+            <p><em>Estado Inicial: Derivado de Documents (v0.1)</em></p>
+            <p>
+              <strong>Hipótesis:</strong> Un modelo donde los parámetros se
+              almacenan una vez y son consumidos por múltiples ejecuciones
+              concurrentes [8, 9].
+            </p>
+            <p>
+              <strong>Entrada de Bitácora [Fecha]:</strong> Mapeo conceptual
+              inicial para el ejecutor de Python. Identificando puntos de
+              divergencia donde se requiere mutación de estado [9].
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

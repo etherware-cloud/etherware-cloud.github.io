@@ -1,158 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Etherware Cloud</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<body>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Etherware Cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/base.css" />
+    <script defer src="assets/lang.js"></script>
+  </head>
+  <body>
+    <nav class="lang-switch" aria-label="Language selector">
+      <button data-lang="en">EN</button>
+      <button data-lang="es">ES</button>
+    </nav>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="/index.html" class="active">Home</a>
+      <a href="/principles.html">Principles</a>
+      <a href="/manifesto.html">Manifesto</a>
+      <a href="/antimanifest.html">Anti-Manifesto</a>
+      <a href="/howevolves.html">How EC Evolves</a>
+      <a href="/axioms.html">Axioms</a>
+      <a href="/documents.html">Documents</a>
+      <a href="/experiments.html">Experiments</a>
+      <a href="/history.html">History</a>
+    </nav>
+    <main class="container">
+      <section lang="en">
+        <h1>Etherware Cloud</h1>
+        <p>
+          <strong
+            >A message-centric approach to distributed systems, software
+            development, and collaboration.</strong
+          >
+        </p>
 
-<h1>Etherware Cloud</h1>
-<p><strong>A message-centric approach to distributed systems, software development, and collaboration.</strong></p>
+        <h2>What is Etherware Cloud?</h2>
 
-<hr />
+        <p>
+          Etherware Cloud (EC) is an open project exploring a different way to
+          build, deploy, and evolve software systems. Instead of organizing
+          systems around repositories, pipelines, scripts, and operational
+          layers, EC is built on a single principle:
+          <strong>everything is a message</strong>.
+        </p>
 
-<h2>What is Etherware Cloud?</h2>
+        <p>
+          In Etherware Cloud, code, data, failures, deployments, economic
+          interactions, and even learning processes are treated as messages
+          flowing through topics. Execution emerges from message consumption and
+          production, not from centralized control.
+        </p>
 
-<p>
-Etherware Cloud (EC) is an open project exploring a different way to build, deploy,
-and evolve software systems. Instead of organizing systems around repositories,
-pipelines, scripts, and operational layers, EC is built on a single principle:
-<strong>everything is a message</strong>.
-</p>
+        <p>
+          EC is not a product, a platform, or a framework. It is a conceptual
+          and technical exploration that can have multiple implementations and
+          multiple independent networks.
+        </p>
 
-<p>
-In Etherware Cloud, code, data, failures, deployments, economic interactions,
-and even learning processes are treated as messages flowing through topics.
-Execution emerges from message consumption and production, not from centralized control.
-</p>
+        <h2>What problem does it address?</h2>
 
-<p>
-EC is not a product, a platform, or a framework. It is a conceptual and technical
-exploration that can have multiple implementations and multiple independent networks.
-</p>
+        <p>
+          Modern software development relies on increasingly complex layers such
+          as CI/CD, SRE practices, scripts, and operational tooling. These
+          layers often act as patches on top of models that were not designed
+          for continuous change, cooperation, or economic fairness.
+        </p>
 
-<h2>What problem does it address?</h2>
+        <p>
+          Etherware Cloud questions these assumptions and proposes a model where
+          deployment, failure handling, collaboration, and value attribution are
+          native properties of the system, not external processes.
+        </p>
 
-<p>
-Modern software development relies on increasingly complex layers such as CI/CD,
-SRE practices, scripts, and operational tooling. These layers often act as patches
-on top of models that were not designed for continuous change, cooperation,
-or economic fairness.
-</p>
+        <h2>Core ideas</h2>
 
-<p>
-Etherware Cloud questions these assumptions and proposes a model where deployment,
-failure handling, collaboration, and value attribution are native properties
-of the system, not external processes.
-</p>
+        <ul>
+          <li>Everything is a message, including code and failures.</li>
+          <li>Deployment is a change of topics, not a special operation.</li>
+          <li>Failures are observable, replayable messages.</li>
+          <li>Multiple solutions can coexist without conflict.</li>
+          <li>Learning and experimentation are explicitly non-economic.</li>
+          <li>Economic value is tracked causally, not speculatively.</li>
+          <li>
+            Multiple Etherware Cloud networks can coexist and later
+            interoperate.
+          </li>
+        </ul>
 
-<h2>Core ideas</h2>
+        <h2>Project status</h2>
 
-<ul>
-  <li>Everything is a message, including code and failures.</li>
-  <li>Deployment is a change of topics, not a special operation.</li>
-  <li>Failures are observable, replayable messages.</li>
-  <li>Multiple solutions can coexist without conflict.</li>
-  <li>Learning and experimentation are explicitly non-economic.</li>
-  <li>Economic value is tracked causally, not speculatively.</li>
-  <li>Multiple Etherware Cloud networks can coexist and later interoperate.</li>
-</ul>
+        <p>
+          Etherware Cloud is an active exploration. Some ideas are implemented
+          experimentally, others exist only as axioms and design documents.
+        </p>
 
-<h2>Project status</h2>
+        <p>
+          The project intentionally avoids premature promises about performance,
+          scalability, or economic models.
+        </p>
 
-<p>
-Etherware Cloud is an active exploration. Some ideas are implemented experimentally,
-others exist only as axioms and design documents.
-</p>
+        <h2>Repositories</h2>
 
-<p>
-The project intentionally avoids premature promises about performance, scalability,
-or economic models.
-</p>
+        <ul>
+          <li>
+            <a href="https://github.com/etherware-cloud/documents">
+              etherware-cloud/documents
+            </a>
+            — Design documents, axioms, and conceptual discussions.
+          </li>
+          <li>
+            <a href="https://github.com/etherware-cloud/python_exec">
+              etherware-cloud/python_exec
+            </a>
+            — Early Python executor to experiment with selected axioms.
+          </li>
+        </ul>
+      </section>
 
-<h2>Repositories</h2>
+      <!-- Español -->
+      <section lang="es">
+        <h1>Etherware Cloud</h1>
+        <p>
+          <strong
+            >Un enfoque centrado en mensajes para sistemas distribuidos,
+            desarrollo de software y colaboración.</strong
+          >
+        </p>
 
-<ul>
-  <li>
-    <a href="https://github.com/etherware-cloud/documents">
-      etherware-cloud/documents
-    </a>
-    — Design documents, axioms, and conceptual discussions.
-  </li>
-  <li>
-    <a href="https://github.com/etherware-cloud/python_exec">
-      etherware-cloud/python_exec
-    </a>
-    — Early Python executor to experiment with selected axioms.
-  </li>
-</ul>
+        <h2>¿Qué es Etherware Cloud?</h2>
 
-<hr />
+        <p>
+          Etherware Cloud (EC) es un proyecto abierto que explora una forma
+          diferente de construir, desplegar y evolucionar sistemas de software.
+          En lugar de organizar los sistemas alrededor de repositorios,
+          pipelines, scripts y capas operativas, EC se basa en un principio
+          simple: <strong>todo es un mensaje</strong>.
+        </p>
 
-<h1>Etherware Cloud (Español)</h1>
-<p><strong>Un enfoque centrado en mensajes para sistemas distribuidos, desarrollo de software y colaboración.</strong></p>
+        <p>
+          En Etherware Cloud, el código, los datos, las fallas, los despliegues,
+          las interacciones económicas e incluso el aprendizaje se tratan como
+          mensajes que fluyen por tópicos. La ejecución emerge del consumo y la
+          producción de mensajes, no de un control centralizado.
+        </p>
 
-<h2>¿Qué es Etherware Cloud?</h2>
+        <p>
+          EC no es un producto, ni una plataforma, ni un framework. Es una
+          exploración conceptual y técnica que admite múltiples implementaciones
+          y múltiples redes independientes.
+        </p>
 
-<p>
-Etherware Cloud (EC) es un proyecto abierto que explora una forma diferente de construir,
-desplegar y evolucionar sistemas de software. En lugar de organizar los sistemas
-alrededor de repositorios, pipelines, scripts y capas operativas, EC se basa
-en un principio simple: <strong>todo es un mensaje</strong>.
-</p>
+        <h2>¿Qué problema intenta abordar?</h2>
 
-<p>
-En Etherware Cloud, el código, los datos, las fallas, los despliegues,
-las interacciones económicas e incluso el aprendizaje se tratan como mensajes
-que fluyen por tópicos. La ejecución emerge del consumo y la producción de mensajes,
-no de un control centralizado.
-</p>
+        <p>
+          El desarrollo moderno de software depende de capas cada vez más
+          complejas como CI/CD, prácticas de SRE, scripts y herramientas
+          operativas. Estas capas suelen funcionar como parches sobre modelos
+          que no fueron diseñados para el cambio continuo, la cooperación ni la
+          atribución justa de valor.
+        </p>
 
-<p>
-EC no es un producto, ni una plataforma, ni un framework.
-Es una exploración conceptual y técnica que admite múltiples implementaciones
-y múltiples redes independientes.
-</p>
+        <p>
+          Etherware Cloud cuestiona estos supuestos y propone un modelo donde el
+          despliegue, el manejo de fallas, la colaboración y la economía son
+          propiedades nativas del sistema, no procesos externos.
+        </p>
 
-<h2>¿Qué problema intenta abordar?</h2>
+        <h2>Ideas centrales</h2>
 
-<p>
-El desarrollo moderno de software depende de capas cada vez más complejas como CI/CD,
-prácticas de SRE, scripts y herramientas operativas. Estas capas suelen funcionar
-como parches sobre modelos que no fueron diseñados para el cambio continuo,
-la cooperación ni la atribución justa de valor.
-</p>
+        <ul>
+          <li>Todo es un mensaje, incluyendo el código y las fallas.</li>
+          <li>
+            El despliegue es un cambio de tópicos, no una operación especial.
+          </li>
+          <li>Las fallas son mensajes observables y reproducibles.</li>
+          <li>Múltiples soluciones pueden coexistir sin conflicto.</li>
+          <li>El aprendizaje y la experimentación no son económicos.</li>
+          <li>
+            El valor económico se rastrea por causalidad, no por especulación.
+          </li>
+          <li>
+            Pueden existir múltiples redes Etherware Cloud que luego se acoplen.
+          </li>
+        </ul>
 
-<p>
-Etherware Cloud cuestiona estos supuestos y propone un modelo donde el despliegue,
-el manejo de fallas, la colaboración y la economía son propiedades nativas del sistema,
-no procesos externos.
-</p>
+        <h2>Estado del proyecto</h2>
 
-<h2>Ideas centrales</h2>
+        <p>
+          Etherware Cloud es una exploración activa. Algunas ideas están
+          implementadas de forma experimental, otras existen únicamente como
+          axiomas y documentos de diseño.
+        </p>
 
-<ul>
-  <li>Todo es un mensaje, incluyendo el código y las fallas.</li>
-  <li>El despliegue es un cambio de tópicos, no una operación especial.</li>
-  <li>Las fallas son mensajes observables y reproducibles.</li>
-  <li>Múltiples soluciones pueden coexistir sin conflicto.</li>
-  <li>El aprendizaje y la experimentación no son económicos.</li>
-  <li>El valor económico se rastrea por causalidad, no por especulación.</li>
-  <li>Pueden existir múltiples redes Etherware Cloud que luego se acoplen.</li>
-</ul>
-
-<h2>Estado del proyecto</h2>
-
-<p>
-Etherware Cloud es una exploración activa. Algunas ideas están implementadas
-de forma experimental, otras existen únicamente como axiomas y documentos de diseño.
-</p>
-
-<p>
-El proyecto evita deliberadamente promesas prematuras sobre performance,
-escalabilidad o modelos económicos cerrados.
-</p>
-
-</body>
+        <p>
+          El proyecto evita deliberadamente promesas prematuras sobre
+          performance, escalabilidad o modelos económicos cerrados.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>

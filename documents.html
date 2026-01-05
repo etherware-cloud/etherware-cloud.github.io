@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Etherware Cloud – Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Official and provisional canon of Etherware Cloud."
+    />
+    <link rel="stylesheet" href="assets/base.css" />
+    <script defer src="assets/lang.js"></script>
+  </head>
+  <body>
+    <nav class="lang-switch" aria-label="Language selector">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </nav>
+
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="/index.html">Home</a>
+      <a href="/principles.html">Principles</a>
+      <a href="/manifesto.html">Manifesto</a>
+      <a href="/antimanifest.html">Anti-Manifesto</a>
+      <a href="/howevolves.html">How EC Evolves</a>
+      <a href="/axioms.html">Axioms</a>
+      <a href="/documents.html" class="active">Documents</a>
+      <a href="/experiments.html">Experiments</a>
+      <a href="/history.html">History</a>
+    </nav>
+
+    <main class="container">
+      <section lang="en">
+        <h1>Documents</h1>
+        <p>
+          <strong>Documents</strong> represent the provisional canon of
+          Etherware Cloud: ideas that are considered valid for use and provide a
+          stable reference for development.
+        </p>
+
+        <div class="workflow-box">
+          <h3>Operational Workflow</h3>
+          <p>
+            Before an idea is formalized here, it must go through a public
+            process of discussion and "hardening":
+          </p>
+          <ol>
+            <li>
+              <strong>Opening a Proposal:</strong> Every new document starts as
+              a <strong>GitHub Issue</strong> in our official repository:
+              <a
+                href="https://github.com/etherware-cloud/etherware-cloud.github.io/issues"
+                >GitHub Issues</a
+              >
+              [i].
+            </li>
+            <li>
+              <strong>Discussion and Hardening:</strong> The community and the
+              author use this space to test the concept. The use of
+              <strong>AI is actively encouraged</strong> to "harden" the idea
+              against technical inaccuracies or false claims.
+            </li>
+            <li>
+              <strong>Formalization:</strong> Once the discussion is closed and
+              the idea is stable, it is moved to a Document format via a Pull
+              Request.
+            </li>
+          </ol>
+        </div>
+
+        <h2>Template for New Documents</h2>
+        <p>
+          To ensure <strong>radical clarity</strong> and avoid "infinite
+          discussions," all proposals must follow the structure exemplified
+          below by our processor architecture model.
+        </p>
+
+        <div class="example-template">
+          <h3>Example: Shared Parameter Consumption (Processors)</h3>
+          <p>
+            <strong>Context:</strong> Current mainstream architectures (x86-64,
+            ARM) maintain independent call stacks for each execution,
+            duplicating parameter data.
+          </p>
+          <p>
+            <strong>Problem:</strong> From an EC perspective, this duplication
+            is a structural inefficiency that increases memory pressure and
+            prevents shared reasoning over identical inputs.
+          </p>
+          <p>
+            <strong>Hypothesis:</strong> A model where parameters are stored
+            once and consumed by multiple concurrent executions, decoupling
+            consumption from stack duplication.
+          </p>
+          <p>
+            <strong>Expected Outcome:</strong> Drastic reduction in messaging
+            overhead and new parallel optimization forms.
+          </p>
+          <p><strong>Status:</strong> Documented as Experiment.</p>
+        </div>
+      </section>
+
+      <!-- Sección en Español -->
+      <section lang="es">
+        <h1>Documentos</h1>
+        <p>
+          Los <strong>Documents</strong> representan el canon provisional de
+          Etherware Cloud: ideas que se consideran válidas para su uso y ofrecen
+          una referencia estable para el desarrollo.
+        </p>
+
+        <div class="workflow-box">
+          <h3>Flujo de Trabajo Operativo</h3>
+          <p>
+            Antes de que una idea se formalice aquí, debe pasar por un proceso
+            público de discusión y "blindaje":
+          </p>
+          <ol>
+            <li>
+              <strong>Apertura de Propuesta:</strong> Todo documento comienza
+              como un <strong>GitHub Issue</strong> en nuestro repositorio
+              oficial:
+              <a
+                href="https://github.com/etherware-cloud/etherware-cloud.github.io/issues"
+                >GitHub Issues</a
+              >
+              [i].
+            </li>
+            <li>
+              <strong>Discusión y Blindaje:</strong> Se utiliza ese espacio para
+              probar el concepto. Se promueve activamente el
+              <strong>uso de IA</strong> para "blindar" la idea contra
+              imprecisiones técnicas o afirmaciones falsas.
+            </li>
+            <li>
+              <strong>Formalización:</strong> Una vez cerrada la discusión y
+              estabilizada la idea, se traslada al formato de Documento mediante
+              un Pull Request.
+            </li>
+          </ol>
+        </div>
+
+        <h2>Template para Nuevos Documentos</h2>
+        <p>
+          Para garantizar una <strong>claridad radical</strong> y evitar
+          "discusiones infinitas", toda propuesta debe seguir la estructura
+          ejemplificada con nuestro modelo de arquitectura de procesadores.
+        </p>
+
+        <div class="example-template">
+          <h3>Ejemplo: Consumo Compartido de Parámetros (Procesadores)</h3>
+          <p>
+            <strong>Contexto:</strong> Las arquitecturas actuales (x86-64, ARM)
+            mantienen pilas de llamadas independientes para cada ejecución,
+            duplicando los datos de los parámetros.
+          </p>
+          <p>
+            <strong>Problema:</strong> Desde la perspectiva de EC, esta
+            duplicación es una ineficiencia estructural que aumenta la presión
+            de memoria e impide el razonamiento compartido sobre entradas
+            idénticas.
+          </p>
+          <p>
+            <strong>Hipótesis:</strong> Un modelo donde los parámetros se
+            almacenan una vez y son consumidos por múltiples ejecuciones
+            concurrentes, desacoplando el consumo de la duplicación de la pila.
+          </p>
+          <p>
+            <strong>Resultado Esperado:</strong> Reducción drástica del overhead
+            de mensajería y nuevas formas de optimización paralela.
+          </p>
+          <p><strong>Estado:</strong> Documentado como Experiment.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

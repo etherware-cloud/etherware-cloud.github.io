@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 900 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,450,30)">
+        <text x="-160.673px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:18px;fill:rgb(51,51,51);">Evolution: System with Router <tspan x="104.678px 117.677px " y="0px 0px ">Ad</tspan>ded</text>
+    </g>
+    <path d="M580,65L580,135C580,137.76 577.76,140 575,140L325,140C322.24,140 320,137.76 320,135L320,65C320,62.24 322.24,60 325,60L575,60C577.76,60 580,62.24 580,65Z" style="fill:rgb(227,242,253);stroke:rgb(25,118,210);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,450,85)">
+        <text x="-55.094px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">HTTP<tspan x="-18.795px -14.906px " y="0px 0px "> C</tspan>onnector</text>
+    </g>
+    <g transform="matrix(1,0,0,1,330,105)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">produce: raw-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,330,125)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">consume: response.../...</text>
+    </g>
+    <path d="M456,158L450,170L444,158C447,161 453,161 456,158Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M450,140L450,160.4" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <path d="M570,175L570,205C570,207.76 567.76,210 565,210L335,210C332.24,210 330,207.76 330,205L330,175C330,172.24 332.24,170 335,170L565,170C567.76,170 570,172.24 570,175Z" style="fill:rgb(255,243,224);stroke:rgb(245,124,0);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,450,195)">
+        <text x="-70.4px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">topic://raw-request.../</text>
+    </g>
+    <path d="M456,228L450,240L444,228C447,231 453,231 456,228Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M450,210L450,230.4" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <path d="M560,245L560,315C560,317.76 557.76,320 555,320L345,320C342.24,320 340,317.76 340,315L340,245C340,242.24 342.24,240 345,240L555,240C557.76,240 560,242.24 560,245Z" style="fill:rgb(227,242,253);stroke:rgb(25,118,210);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,450,265)">
+        <text x="-15.938px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">Auth</text>
+    </g>
+    <g transform="matrix(1,0,0,1,350,285)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">consume: raw-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,350,305)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">produce: request.../</text>
+    </g>
+    <path d="M456,338L450,350L444,338C447,341 453,341 456,338Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M450,320L450,340.4" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <path d="M540,355L540,385C540,387.76 537.76,390 535,390L365,390C362.24,390 360,387.76 360,385L360,355C360,352.24 362.24,350 365,350L535,350C537.76,350 540,352.24 540,355Z" style="fill:rgb(255,243,224);stroke:rgb(245,124,0);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,450,375)">
+        <text x="-56.007px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">topic://request.../</text>
+    </g>
+    <path d="M456,408L450,420L444,408C447,411 453,411 456,408Z" style="fill:rgb(56,142,60);fill-rule:nonzero;"/>
+    <path d="M450,390L450,410.4" style="fill:none;fill-rule:nonzero;stroke:rgb(56,142,60);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,460,410)">
+        <text x="0px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;fill:rgb(46,125,50);">NEW</text>
+    </g>
+    <path d="M560,425L560,515C560,517.76 557.76,520 555,520L345,520C342.24,520 340,517.76 340,515L340,425C340,422.24 342.24,420 345,420L555,420C557.76,420 560,422.24 560,425Z" style="fill:rgb(200,230,201);stroke:rgb(56,142,60);stroke-width:3px;"/>
+    <g transform="matrix(1,0,0,1,450,445)">
+        <text x="-38.994px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;fill:rgb(46,125,50);">Router (NEW)</text>
+    </g>
+    <g transform="matrix(1,0,0,1,350,465)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">consume: request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,350,485)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">produce: static-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,350,505)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">produce: api-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,83.671897,3.009819)">
+        <g transform="matrix(1,-0,-0,1,-83.671897,-3.009819)">
+            <path d="M239.794,561.072L233.672,573.01L227.795,560.949C230.764,563.98 236.764,564.041 239.794,561.072Z" style="fill:rgb(56,142,60);fill-rule:nonzero;"/>
+            <path d="M340,470C266.569,470.794 235.759,490.961 233.77,563.41" style="fill:none;fill-rule:nonzero;stroke:rgb(56,142,60);stroke-width:2px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,83.671897,3.009819)">
+        <path d="M250,575L250,605C250,607.76 247.76,610 245,610L55,610C52.24,610 50,607.76 50,605L50,575C50,572.24 52.24,570 55,570L245,570C247.76,570 250,572.24 250,575Z" style="fill:rgb(255,243,224);stroke:rgb(245,124,0);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,233.671897,598.009819)">
+        <text x="-76.624px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">topic://static-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,83.671897,3.009819)">
+        <path d="M260,635L260,725C260,727.76 257.76,730 255,730L45,730C42.24,730 40,727.76 40,725L40,635C40,632.24 42.24,630 45,630L255,630C257.76,630 260,632.24 260,635Z" style="fill:rgb(227,242,253);stroke:rgb(25,118,210);stroke-width:2px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,233.671897,658.009819)">
+        <text x="-57.955px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">Content Resolver</text>
+    </g>
+    <g transform="matrix(1,0,0,1,133.671897,678.009819)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">consume: static-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,133.671897,698.009819)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">query: static-content...</text>
+    </g>
+    <g transform="matrix(1,0,0,1,133.671897,718.009819)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">produce: response.../</text>
+    </g>
+    <path d="M665.584,557.801L660,570L653.591,558.213C656.692,561.109 662.689,560.902 665.584,557.801Z" style="fill:rgb(56,142,60);fill-rule:nonzero;"/>
+    <path d="M560,470C618.569,469.646 655.807,509.819 659.67,560.406" style="fill:none;fill-rule:nonzero;stroke:rgb(56,142,60);stroke-width:2px;"/>
+    <path d="M750,575L750,605C750,607.76 747.76,610 745,610L565,610C562.24,610 560,607.76 560,605L560,575C560,572.24 562.24,570 565,570L745,570C747.76,570 750,572.24 750,575Z" style="fill:rgb(255,243,224);stroke:rgb(245,124,0);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,655,595)">
+        <text x="-68.452px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">topic://api-request.../</text>
+    </g>
+    <path d="M750,635L750,725C750,727.76 747.76,730 745,730L565,730C562.24,730 560,727.76 560,725L560,635C560,632.24 562.24,630 565,630L745,630C747.76,630 750,632.24 750,635Z" style="fill:rgb(200,230,201);stroke:rgb(56,142,60);stroke-width:3px;"/>
+    <g transform="matrix(1,0,0,1,655,655)">
+        <text x="-53.669px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;fill:rgb(46,125,50);">API Handler (NEW)</text>
+    </g>
+    <g transform="matrix(1,0,0,1,570,675)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">consume: api-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,570,695)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">query: database...</text>
+    </g>
+    <g transform="matrix(1,0,0,1,570,715)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">produce: response.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,83.671897,3.009819)">
+        <g transform="matrix(1,-0,-0,1,-83.671897,-3.009819)">
+            <path d="M307.822,134.371L320,140L308.19,146.365C311.096,143.274 310.912,137.277 307.822,134.371Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+            <path d="M123.672,683.01C72.555,684.236 74.837,154.581 310.405,140.294" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;stroke-dasharray:5,5;"/>
+        </g>
+    </g>
+    <path d="M591.157,146.501L579.421,140L591.663,134.512C588.539,137.382 588.286,143.377 591.157,146.501Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M750.711,683.649C809.482,683.189 814.088,157.242 589.012,140.405" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;stroke-dasharray:5,5;"/>
+    <g transform="matrix(1,0,0,1,373.574098,763.427426)">
+        <g transform="matrix(12,0,0,12,58.699219,0)">
+        </g>
+        <g transform="matrix(12,0,0,12,62.033203,0)">
+        </g>
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">responses ﬂow back</text>
+    </g>
+    <path d="M320,53L320,67C320,68.656 318.656,70 317,70L303,70C301.344,70 300,68.656 300,67L300,53C300,51.344 301.344,50 303,50L317,50C318.656,50 320,51.344 320,53Z" style="fill:rgb(200,230,201);stroke:rgb(56,142,60);stroke-width:3px;"/>
+    <g transform="matrix(1,0,0,1,325,65)">
+        <text x="0px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;fill:rgb(46,125,50);">= New processes (no changes to existing code)</text>
+    </g>
+    <path d="M270,55L270,125C270,127.76 267.76,130 265,130L55,130C52.24,130 50,127.76 50,125L50,55C50,52.24 52.24,50 55,50L265,50C267.76,50 270,52.24 270,55Z" style="fill:rgb(240,240,240);stroke:rgb(153,153,153);stroke-width:1px;"/>
+    <g transform="matrix(1,0,0,1,160,70)">
+        <text x="-51.328px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">What Changed:</text>
+    </g>
+    <g transform="matrix(1,0,0,1,60,90)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">• Router added (new process)</text>
+    </g>
+    <g transform="matrix(1,0,0,1,60,105)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">• <tspan x="6.873px 14.877px " y="0px 0px ">AP</tspan>I Handler added (new process)</text>
+    </g>
+    <g transform="matrix(1,0,0,1,60,120)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">• Content Resolver: request → static-request</text>
+    </g>
+</svg>

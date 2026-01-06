@@ -17,10 +17,10 @@
   --border: #e5e5e5;
   --accent: #2f6fed;
 
-  --font-body: system-ui, -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco,
-               Consolas, "Liberation Mono", monospace;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
 
   --max-width: 780px;
   --line-height: 1.65;
@@ -157,7 +157,6 @@ footer {
   }
 }
 
-
 /* ---- Language-specific styles ---- */
 section[lang] {
   display: none;
@@ -214,4 +213,10 @@ section[lang] {
 .top-nav a.active {
   opacity: 1;
   text-decoration: underline;
+}
+
+.step-number {
+  font-weight: bold;
+  color: #0066cc;
+  font-size: 18px;
 }

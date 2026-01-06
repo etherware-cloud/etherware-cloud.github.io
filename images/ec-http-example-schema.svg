@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,400,30)">
+        <text x="-142.049px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:18px;fill:rgb(51,51,51);">Process Interconnection Schema</text>
+    </g>
+    <path d="M550,65L550,175C550,177.76 547.76,180 545,180L255,180C252.24,180 250,177.76 250,175L250,65C250,62.24 252.24,60 255,60L545,60C547.76,60 550,62.24 550,65Z" style="fill:rgb(227,242,253);stroke:rgb(25,118,210);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,400,85)">
+        <text x="-55.094px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">HTTP<tspan x="-18.795px -14.906px " y="0px 0px "> C</tspan>onnector</text>
+    </g>
+    <g transform="matrix(1,0,0,1,260,105)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(201,32,32);">produce: raw-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,260,125)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(50,165,197);">consume: response.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,260,145)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(50,165,197);">consume: unauthorized.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,260,165)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(50,165,197);">consume: not-found.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,456.630859,144.291936)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(50,165,197);">consume: error<tspan x="80.033px 83.367px " y="0px 0px ">..</tspan>./</text>
+    </g>
+    <path d="M406,208L400,220L394,208C397,211 403,211 406,208Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M400,180L400,210.4" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,420,205)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">produce</text>
+    </g>
+    <path d="M530,225L530,255C530,257.76 527.76,260 525,260L275,260C272.24,260 270,257.76 270,255L270,225C270,222.24 272.24,220 275,220L525,220C527.76,220 530,222.24 530,225Z" style="fill:rgb(255,243,224);stroke:rgb(245,124,0);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,400,245)">
+        <text x="-70.4px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">topic://raw-request.../</text>
+    </g>
+    <path d="M406,288L400,300L394,288C397,291 403,291 406,288Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M400,260L400,290.4" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <path d="M520,305L520,395C520,397.76 517.76,400 515,400L285,400C282.24,400 280,397.76 280,395L280,305C280,302.24 282.24,300 285,300L515,300C517.76,300 520,302.24 520,305Z" style="fill:rgb(227,242,253);stroke:rgb(25,118,210);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,400,325)">
+        <text x="-15.938px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">Auth</text>
+    </g>
+    <g transform="matrix(1,0,0,1,290,345)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(50,165,197);">consume: raw-request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,290,365)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(201,32,32);">produce: request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,290,385)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(201,32,32);">produce: unauthorized.../</text>
+    </g>
+    <path d="M237.895,114.214L250,120L238.109,126.212C241.055,123.16 240.948,117.161 237.895,114.214Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M280,350C132.828,350 141.991,218.001 159.565,172.142C176.228,128.662 220.127,121.316 240.402,120.171" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,160,230)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">unauthorized</text>
+    </g>
+    <path d="M406,428L400,440L394,428C397,431 403,431 406,428Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M400,400L400,430.4" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,420,425)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">produce</text>
+    </g>
+    <path d="M500,445L500,475C500,477.76 497.76,480 495,480L305,480C302.24,480 300,477.76 300,475L300,445C300,442.24 302.24,440 305,440L495,440C497.76,440 500,442.24 500,445Z" style="fill:rgb(255,243,224);stroke:rgb(245,124,0);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,400,465)">
+        <text x="-56.007px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">topic://request.../</text>
+    </g>
+    <path d="M406,508L400,520L394,508C397,511 403,511 406,508Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M400,480L400,510.4" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <path d="M560,525L560,655C560,657.76 557.76,660 555,660L245,660C242.24,660 240,657.76 240,655L240,525C240,522.24 242.24,520 245,520L555,520C557.76,520 560,522.24 560,525Z" style="fill:rgb(227,242,253);stroke:rgb(25,118,210);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,400,545)">
+        <text x="-57.955px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">Content Resolver</text>
+    </g>
+    <g transform="matrix(1,0,0,1,250,565)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(50,165,197);">consume: request.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,250,585)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">query: static-content... (historical)</text>
+    </g>
+    <g transform="matrix(1,0,0,1,250,605)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(201,32,32);">produce: response.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,250,625)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(201,32,32);">produce: not-found.../</text>
+    </g>
+    <g transform="matrix(1,0,0,1,250,645)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(201,32,32);">produce: error<tspan x="74.707px 78.041px " y="0px 0px ">..</tspan>./</text>
+    </g>
+    <g transform="matrix(1,0,0,1.029504,0,-17.407548)">
+        <g transform="matrix(1,-0,-0,0.971341,-0,16.908669)">
+            <path d="M562.202,112.175L550,106.133L562.155,99.997C559.122,103.053 559.145,109.143 562.202,112.175Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+            <path d="M560,590C640,590 716.582,528.474 714.537,331.972C712.788,163.911 650.223,107.663 559.743,106.096" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2.03px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,720.03531,358.076748)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">response</text>
+    </g>
+    <g transform="matrix(1,0,0,1.041454,0,-24.043366)">
+        <g transform="matrix(1,-0,-0,0.960196,-0,23.086343)">
+            <path d="M237.759,94.786L250,100.931L237.739,107.037C240.807,103.979 240.816,97.854 237.759,94.786Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+            <path d="M240,580C189.989,580 134.791,577.803 112.632,494.219C93.7,422.809 91.919,231.331 120.376,161.368C124.055,152.324 128.437,144.629 133.363,138.083C161.202,101.087 206.41,100.785 240.199,100.915" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2.04px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,110,350)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">not-found</text>
+    </g>
+    <path d="M561.837,146.316L550,140L562.155,134.32C559.076,137.239 558.917,143.237 561.837,146.316Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+    <path d="M560,538.736C666.667,538.736 687.129,390.655 685.463,310.655C684.318,255.726 659.067,146.255 559.597,140.254" style="fill:none;fill-rule:nonzero;stroke:rgb(51,51,51);stroke-width:2px;"/>
+    <g transform="matrix(1,0,0,1,648.126411,358.076748)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">error</text>
+    </g>
+    <path d="M750,735L750,845C750,847.76 747.76,850 745,850L55,850C52.24,850 50,847.76 50,845L50,735C50,732.24 52.24,730 55,730L745,730C747.76,730 750,732.24 750,735Z" style="fill:rgb(245,245,245);stroke:rgb(153,153,153);stroke-width:1px;"/>
+    <g transform="matrix(1,0,0,1,400,755)">
+        <text x="-59.524px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:14px;fill:rgb(51,51,51);">Key Observations</text>
+    </g>
+    <g transform="matrix(1,0,0,1,60,780)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">• HTTP<tspan x="38.648px 41.982px " y="0px 0px "> C</tspan>onnector is the only process interfacing with the external world</text>
+    </g>
+    <g transform="matrix(1,0,0,1,60,800)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">• raw-request → request represents the trust boundary (untrusted → trusted)</text>
+    </g>
+    <g transform="matrix(1,0,0,1,60,820)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">• Multiple response paths: success, unauthorized, not-found, system error</text>
+    </g>
+    <g transform="matrix(1,0,0,1,60,840)">
+        <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;fill:rgb(102,102,102);">• Processes only know about topics, not about each other</text>
+    </g>
+</svg>

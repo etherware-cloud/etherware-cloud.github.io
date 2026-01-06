@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examples - Etherware Cloud</title>
+    <link rel="stylesheet" href="assets/base.css" />
+    <script defer src="assets/lang.js"></script>
+  </head>
+  <body>
+    <nav class="lang-switch" aria-label="Language selector">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="es">ES</button>
+    </nav>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/principles.html">Principles</a>
+      <a href="/examples.html" class="active">Examples</a>
+      <a href="/manifesto.html">Manifesto</a>
+      <a href="/antimanifest.html">Anti-Manifesto</a>
+      <a href="/howevolves.html">How EC Evolves</a>
+      <a href="/axioms.html">Axioms</a>
+      <a href="/documents.html">Documents</a>
+      <a href="/experiments.html">Experiments</a>
+      <a href="/history.html">History</a>
+    </nav>
+
+    <main class="container">
+      <!-- English Section -->
+      <section lang="en">
+        <h1>Examples</h1>
+        <p>
+          <strong
+            >Concrete examples of how Etherware Cloud works in practice.</strong
+          >
+        </p>
+
+        <h2>Example: Static Content HTTP Server</h2>
+
+        <p>
+          This example demonstrates how a simple HTTP server for static content
+          would work in Etherware Cloud. It shows how messages flow through
+          topics, how processes interact without direct coupling, and how the
+          system handles both success and failure cases.
+        </p>
+
+        <h3>1. Process Interconnection Schema</h3>
+
+        <p>
+          This diagram shows the static structure: which processes exist, which
+          topics they produce to and consume from.
+        </p>
+
+        <div class="diagram">
+          <img
+            src="images/ec-http-example-schema.svg"
+            alt="Process Interconnection Schema"
+          />
+        </div>
+
+        <p><strong>Key observations:</strong></p>
+        <ul>
+          <li>
+            The HTTP Connector is the only process that interacts with the
+            outside world
+          </li>
+          <li>
+            Each process is independent and only knows about topics, not other
+            processes
+          </li>
+          <li>
+            The boundary between untrusted (raw-request) and trusted (request)
+            data is explicit
+          </li>
+          <li>
+            Multiple response paths exist: success, unauthorized, not-found, and
+            system error
+          </li>
+        </ul>
+
+        <h3>2. Message Flow</h3>
+
+        <p>
+          This shows the temporal evolution of messages through the system for a
+          successful request.
+        </p>
+
+        <div class="step">
+          <p class="step-number">Step 1: HTTP Request Arrives</p>
+          <p>
+            The HTTP Connector receives an external request and converts it to a
+            message.
+          </p>
+
+          <div class="message-box">
+            <h4>HTTP Request</h4>
+            <pre><code>GET /static/index.html HTTP/1.1
+Host: example.com
+Authorization: Bearer token123</code></pre>
+          </div>
+
+          <div class="message-box">
+            <h4>Produces to: topic://raw-request.../req-789</h4>
+            <pre><code>{
+  uuid: "req-789",
+  method: "GET",
+  uri: "/static/index.html",
+  headers: {
+    "host": "example.com",
+    "authorization": "Bearer token123"
+  },
+  body: null,
+  timestamp: "2025-01-05T14:30:00Z"
+}</code></pre>
+          </div>
+        </div>
+
+        <div class="step">
+          <p class="step-number">Step 2: Authorization</p>
+          <p>
+            Auth consumes the raw request, validates credentials, and produces a
+            trusted request.
+          </p>
+
+          <div class="message-box">
+            <h4>Produces to: topic://request.../req-789</h4>
+            <pre><code>{
+  request_uuid: "req-789",
+  uri: "/static/index.html",
+  method: "GET",
+  validated: true,
+  user: "guest",
+  timestamp: "2025-01-05T14:30:00.150Z"
+}</code></pre>
+          </div>
+        </div>
+
+        <div class="step">
+          <p class="step-number">Step 2b: Alternative - Unauthorized</p>
+          <p>If authorization fails, a different message is produced:</p>
+
+          <div class="message-box">
+            <h4>Produces to: topic://unauthorized.../req-789</h4>
+            <pre><code>{
+  request_uuid: "req-789",
+  reason: "Invalid token",
+  status: 401,
+  timestamp: "2025-01-05T14:30:00.150Z"
+}</code></pre>
+          </div>
+
+          <p>→ HTTP Connector consumes this and responds with HTTP 401</p>
+        </div>
+
+        <div class="step">
+          <p class="step-number">Step 3: Content Resolution</p>
+          <p>
+            Content Resolver queries historical messages to find the requested
+            content.
+          </p>
+
+          <div class="message-box">
+            <h4>Query: topic://static-content...</h4>
+            <pre><code>WHERE uri = "/static/index.html"
+ORDER BY created_at DESC
+LIMIT 1</code></pre>
+          </div>
+
+          <div class="message-box">
+            <h4>Finds historical message:</h4>
+            <pre><code>{
+  uuid: "content-abc-123",
+  uri: "/static/index.html",
+  content: "&lt;html&gt;&lt;body&gt;Hello World&lt;/body&gt;&lt;/html&gt;",
+  content_type: "text/html",
+  created_at: "2025-01-01T10:00:00Z"
+}</code></pre>
+          </div>
+
+          <div class="message-box">
+            <h4>Produces to: topic://response.../req-789</h4>
+            <pre><code>{
+  request_uuid: "req-789",
+  status: 200,
+  content: "&lt;html&gt;&lt;body&gt;Hello World&lt;/body&gt;&lt;/html&gt;",
+  content_type: "text/html",
+  timestamp: "2025-01-05T14:30:00.300Z"
+}</code></pre>
+          </div>
+        </div>
+
+        <div class="step">
+          <p class="step-number">Step 3b: Alternative - Not Found</p>
+          <p>If the historical query returns no results:</p>
+
+          <div class="message-box">
+            <h4>Produces to: topic://not-found.../req-789</h4>
+            <pre><code>{
+  request_uuid: "req-789",
+  uri: "/static/index.html",
+  status: 404,
+  timestamp: "2025-01-05T14:30:00.300Z"
+}</code></pre>
+          </div>
+
+          <p>→ HTTP Connector responds with HTTP 404</p>
+        </div>
+
+        <div class="step">
+          <p class="step-number">Step 3c: Alternative - System Error</p>
+          <p>If Content Resolver encounters an internal failure:</p>
+
+          <div class="message-box">
+            <h4>Produces to: topic://error.../req-789</h4>
+            <pre><code>{
+  request_uuid: "req-789",
+  error: "Database connection failed",
+  process: "content-resolver",
+  stack_trace: "...",
+  timestamp: "2025-01-05T14:30:00.300Z"
+}</code></pre>
+          </div>
+
+          <p>→ HTTP Connector responds with HTTP 500</p>
+        </div>
+
+        <div class="step">
+          <p class="step-number">Step 4: HTTP Response</p>
+          <p>
+            HTTP Connector consumes the response and sends it back to the
+            client.
+          </p>
+
+          <div class="message-box">
+            <h4>HTTP Response</h4>
+            <pre><code>HTTP/1.1 200 OK
+Content-Type: text/html
+
+&lt;html&gt;&lt;body&gt;Hello World&lt;/body&gt;&lt;/html&gt;</code></pre>
+          </div>
+        </div>
+
+        <h3>3. Process Pseudocode</h3>
+
+        <h4>HTTP Connector</h4>
+        <pre><code>process HTTPConnector:
+  
+  # Producer side
+  on_http_request(http_req):
+    req_id = generate_uuid()
+    message = {
+      uuid: req_id,
+      method: http_req.method,
+      uri: http_req.path,
+      headers: http_req.headers,
+      body: http_req.body,
+      timestamp: now()
+    }
+    produce("raw-request", message)
+    
+    # Wait for response with timeout
+    wait_for_response(req_id, timeout=30s)
+  
+  # Consumer side
+  wait_for_response(req_id, timeout):
+    while time < timeout:
+      if message = consume_one("response", filter: uuid == req_id):
+        send_http_response(message.status, message.content, message.content_type)
+        return
+      
+      if message = consume_one("unauthorized", filter: request_uuid == req_id):
+        send_http_response(401, message.reason)
+        return
+      
+      if message = consume_one("not-found", filter: request_uuid == req_id):
+        send_http_response(404, "Not Found")
+        return
+      
+      if message = consume_one("error", filter: request_uuid == req_id):
+        log_error(message)
+        send_http_response(500, "Internal Server Error")
+        return
+    
+    # Timeout
+    send_http_response(504, "Gateway Timeout")</code></pre>
+
+        <h4>Auth</h4>
+        <pre><code>process Auth:
+  
+  loop:
+    message = consume("raw-request")
+    
+    if validate_authorization(message.headers):
+      produce("request", {
+        request_uuid: message.uuid,
+        uri: message.uri,
+        method: message.method,
+        validated: true,
+        user: extract_user(message.headers),
+        timestamp: now()
+      })
+    else:
+      produce("unauthorized", {
+        request_uuid: message.uuid,
+        reason: "Invalid or missing credentials",
+        status: 401,
+        timestamp: now()
+      })</code></pre>
+
+        <h4>Content Resolver</h4>
+        <pre><code>process ContentResolver:
+  
+  loop:
+    message = consume("request")
+    
+    try:
+      # Query historical messages
+      content = query_historical(
+        topic: "static-content",
+        filter: {uri: message.uri},
+        order_by: "created_at DESC",
+        limit: 1
+      )
+      
+      if content exists:
+        produce("response", {
+          request_uuid: message.request_uuid,
+          status: 200,
+          content: content.content,
+          content_type: content.content_type,
+          timestamp: now()
+        })
+      else:
+        produce("not-found", {
+          request_uuid: message.request_uuid,
+          uri: message.uri,
+          status: 404,
+          timestamp: now()
+        })
+    
+    catch system_error:
+      produce("error", {
+        request_uuid: message.request_uuid,
+        error: system_error.message,
+        process: "content-resolver",
+        stack_trace: system_error.trace,
+        timestamp: now()
+      })</code></pre>
+
+        <div class="note">
+          <strong>Note on Historical Queries:</strong> EC leaves open how
+          historical queries are implemented. Some options include:
+          <ul>
+            <li>Local indices maintained by consumers</li>
+            <li>Dedicated query messages (topic://query-index...)</li>
+            <li>Topic compaction by key (uri in this case)</li>
+            <li>Hierarchical topic organizations</li>
+          </ul>
+          The efficiency of these queries depends on the specific message broker
+          implementation and chosen indexing strategy.
+        </div>
+
+        <h3>4. Evolution: Adding a Router (No Code Changes)</h3>
+
+        <p>
+          One of EC's key properties is that new processes can be added without
+          modifying existing ones. Here we add a Router to handle different
+          types of requests.
+        </p>
+
+        <div class="diagram">
+          <img src="images/ec-http-example-evolution-schema.svg" alt="System with Router Added" />
+        </div>
+
+        <h4>Router Pseudocode</h4>
+        <pre><code>process Router:
+  
+  loop:
+    message = consume("request")
+    
+    if message.uri starts_with "/static/":
+      produce("static-request", message)
+    
+    else if message.uri starts_with "/api/":
+      produce("api-request", message)
+    
+    else:
+      produce("not-found", {
+        request_uuid: message.request_uuid,
+        uri: message.uri,
+        status: 404,
+        timestamp: now()
+      })</code></pre>
+
+        <div class="note">
+          <strong>Key observations:</strong>
+          <ul>
+            <li>
+              Content Resolver changes its consume topic from
+              <code>"request"</code> to <code>"static-request"</code>
+            </li>
+            <li>No internal logic of Content Resolver changes</li>
+            <li>
+              A new API Handler can be added independently, consuming from
+              <code>"api-request"</code>
+            </li>
+            <li>HTTP Connector remains completely unchanged</li>
+            <li>This is deployment by topic change, not code redeployment</li>
+          </ul>
+        </div>
+
+        <h2>What This Example Demonstrates</h2>
+
+        <ul>
+          <li>
+            <strong>Message-centric architecture:</strong> Everything flows
+            through topics, not function calls
+          </li>
+          <li>
+            <strong>Explicit trust boundaries:</strong> raw-request vs request
+            makes security concerns visible
+          </li>
+          <li>
+            <strong>Multiple outcome paths:</strong> Success, business-level
+            rejection (401, 404), and system errors (500) are all handled
+            explicitly
+          </li>
+          <li>
+            <strong>Historical queries:</strong> Data persists in topics and can
+            be queried, though implementation details are flexible
+          </li>
+          <li>
+            <strong>Evolution without modification:</strong> New processes
+            (Router) can be inserted without changing existing code
+          </li>
+          <li>
+            <strong>Observable failures:</strong> Errors are messages that can
+            be logged, replayed, and analyzed
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
